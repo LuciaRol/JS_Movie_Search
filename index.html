@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <a href="#">Lu´s Movie Search</a>
+    <input type="text" placeholder="search" id="buscador">
+    <input type="text" placeholder="movie, series or episode" id="tipo">
+    <button id="boton">Buscar</button>
+    <button id="boton_volver">Volver arriba</button>
+  </div>
+    
+
+    <!-- Películas y la landing-->
+    <div id="peliculas" class="row pt-5"></div>
+      <p>¡Esta es la pagina de busquedas de peliculas de Lu! ¡Presta atención, que te explico como funciona!</p>
+      <p>Tienes un buscador que pone "search", aquí puedes buscar lo que quieras. La búsqueda se lanzará automáticamente cuando haya 3 caracteres. Además, puedes buscar dándole a enter o al botón de buscar.</p>
+      <p>Tienes otro buscador a la derecha que permite buscar por tipo: movie, series o episode. Se tiene que escribir exactamente una de estas tres palabras o dejarlo en blanco. En caso de que no sea así, se ignorará. La búsqueda se lanzará presionando enter o dándole al botón de buscar.</p>
+      <p>Una vez se utilice el buscador aparecerá un listado de películas, series, etc. Haz click en el que tengas interés de visualizar. Puedes salir pulsando en la pantalla de fuera cuando hayas terminado.</p>
+      <p>Aparecerán más películas si haces scroll hacia abajo. En caso de que hayas bajado demasiado, no dudes en hacer click en el botón "Volver arriba".</p>
+      <p>En caso de que no se encuentre el poster de una película, aparecerá un error 404 con la siguiente imagen. </p>
+      <img src="https://ih1.redbubble.net/image.3429601350.3818/raf,360x360,075,t,fafafa:ca443f4786.jpg">
+
+    <!-- Detalle de las películas al hacer click -->
+    <div class="modal fade" id="imagenModulo" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header container-fluid"></div>
+          <div class="modal-body container-fluid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts js -->
+  <script src="./js/scripts.js"></script>
+
+  <!--Esta librería facilita el orden y maquetación cuando se crean los carteles. Además, para crear las páginas al hacer click en cada imagen-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
